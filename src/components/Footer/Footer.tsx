@@ -9,13 +9,18 @@ const Footer: React.FC = () => {
     <>
       <AboutUs />
       <footer className="footer">
-        <p>
-          Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas
-          imagens são de propriedade de seus respectivos donos.
-          <br />É vedada a reprodução, total ou parcial, de qualquer conteúdo
-          sem expressa autorização.
-        </p>
-        <img src={logo} />
+        <section className="footer-content">
+          <p>
+            Copyright © 2019. Todos os direitos reservados. Todas as marcas e
+            suas imagens são de propriedade de seus respectivos donos.
+            <br />É vedada a reprodução, total ou parcial, de qualquer conteúdo
+            sem expressa autorização.
+          </p>
+        </section>
+        <figure className="footer-logo">
+          <img src={logo} alt="Logo da Empresa" />
+          <figcaption className="visually-hidden">Logo da Empresa</figcaption>
+        </figure>
       </footer>
     </>
   );

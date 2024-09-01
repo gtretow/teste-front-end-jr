@@ -24,13 +24,20 @@ const Modal: React.FC<ModalProps> = ({ product, onClose }) => {
   return (
     <div className="modal">
       <div className="modal-content">
-        <button className="modal-close-button" onClick={onClose}>
-          X
+        <button
+          className="modal-close-button"
+          aria-label="Fechar modal"
+          onClick={onClose}
+        >
+          &times;
         </button>
         <div className="modal-box">
-          <div className="modal-image">
-            <img src={product.photo} />
-          </div>
+          <figure className="modal-image">
+            <img src={product.photo} alt={`Imagem de ${product.productName}`} />
+            <figcaption className="visually-hidden">
+              Imagem de {product.productName}
+            </figcaption>
+          </figure>
           <div className="modal-text">
             <h2 className="name">{product.productName}</h2>
             <p className="price">
@@ -42,15 +49,23 @@ const Modal: React.FC<ModalProps> = ({ product, onClose }) => {
               })}
             </p>
             <section>{product.descriptionShort}</section>
-            <span className="see-more">
+            <a href="#" aria-label="Ver mais detalhes do produto">
               Veja mais detalhes do produto {">"}
-            </span>
+            </a>
             <div className="quantity-box">
-              <button onClick={handleDecrement} className="quantity-button">
+              <button
+                onClick={handleDecrement}
+                className="quantity-button"
+                aria-label="Diminuir quantidade"
+              >
                 -
               </button>
               <span className="quantity-display">{quantity}</span>
-              <button onClick={handleIncrement} className="quantity-button">
+              <button
+                onClick={handleIncrement}
+                className="quantity-button"
+                aria-label="Aumentar quantidade"
+              >
                 +
               </button>
             </div>

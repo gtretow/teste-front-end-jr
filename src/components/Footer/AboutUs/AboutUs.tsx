@@ -10,27 +10,55 @@ const AboutUs: React.FC = () => {
     <div className="about-us-box">
       <div className="about-us-container">
         <div className="text-box">
-          <h3>Sobre nós</h3>
-          <p>CONHEÇA</p>
-          <p>COMO COMPRAR</p>
-          <p>INDICAÇÃO E DESCONTO</p>
+          <h2>Sobre nós</h2>
+          <ul>
+            <li>
+              <a href="#conheca">Conheça</a>
+            </li>
+            <li>
+              <a href="#como-comprar">Como Comprar</a>
+            </li>
+            <li>
+              <a href="#indicacao-desconto">Indicação e Desconto</a>
+            </li>
+          </ul>
           <div className="icons">
-            <img src={facebookLogo} />
-            <img src={instagramLogo} />
-            <img src={youtubeLogo} />
+            <a href="https://facebook.com" aria-label="Facebook">
+              <img src={facebookLogo} alt="Facebook" />
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+              <img src={instagramLogo} alt="Instagram" />
+            </a>
+            <a href="https://youtube.com" aria-label="YouTube">
+              <img src={youtubeLogo} alt="YouTube" />
+            </a>
           </div>
         </div>
         <div className="text-box">
-          <h3>INFORMAÇÕES ÚTEIS</h3>
-          <p>FALE CONOSCO</p>
-          <p>DÚVIDAS</p>
-          <p>PRAZOS DE ENTREGA</p>
-          <p>FORMAS DE PAGAMENTO</p>
-          <p>POLÍTICA DE PRIVACIDADE</p>
-          <p> TROCAS E DEVOLUÇÕES</p>
+          <h2>INFORMAÇÕES ÚTEIS</h2>
+          <ul>
+            <li>
+              <a href="#fale-conosco">Fale Conosco</a>
+            </li>
+            <li>
+              <a href="#duvidas">Dúvidas</a>
+            </li>
+            <li>
+              <a href="#prazos-entrega">Prazos de Entrega</a>
+            </li>
+            <li>
+              <a href="#formas-pagamento">Formas de Pagamento</a>
+            </li>
+            <li>
+              <a href="#politica-privacidade">Política de Privacidade</a>
+            </li>
+            <li>
+              <a href="#trocas-devolucoes">Trocas e Devoluções</a>
+            </li>
+          </ul>
         </div>
         <div className="text-box">
-          <h3>FORMAS DE PAGAMENTO</h3>
+          <h2>FORMAS DE PAGAMENTO</h2>
           <img className="payment" src={paymentMethod} />
         </div>
       </div>
@@ -44,10 +72,18 @@ const AboutUs: React.FC = () => {
             lorem ipsum
           </p>
 
-          <div className="input-box">
-            <input placeholder="SEU E-MAIL" />
-            <button>OK</button>
-          </div>
+          <form className="input-box">
+            <label htmlFor="newsletter-email" className="visually-hidden">
+              Seu E-mail
+            </label>
+            <input
+              id="newsletter-email"
+              type="email"
+              placeholder="Seu E-mail"
+              required
+            />
+            <button type="submit">OK</button>
+          </form>
         </div>
       </div>
     </div>

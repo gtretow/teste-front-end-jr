@@ -55,13 +55,13 @@ const Header: React.FC = () => {
             className="header-search"
             placeholder="O que você está buscando?"
           />
-          <img src={magnifyingGlass} />
+          <img src={magnifyingGlass} alt="Buscar" role="button" tabIndex={0} />
         </div>
         <div className="header-icons">
-          <img src={box} />
-          <img src={heart} />
-          <img src={userCircle} />
-          <img src={shoppingCart} />
+          <img src={box} alt="Box" />
+          <img src={heart} alt="Favoritos" />
+          <img src={userCircle} alt="Usuário" />
+          <img src={shoppingCart} alt="Carrinho de compras" />
         </div>
       </div>
 
@@ -69,6 +69,8 @@ const Header: React.FC = () => {
         <ul className={styles["category-list"]}>
           {categories.slice(0, -1).map((category) => (
             <li
+              role="button"
+              tabIndex={0}
               key={category}
               className={`${styles["category-item"]} ${
                 selectedCategory === category ? styles["selected"] : ""
@@ -81,6 +83,8 @@ const Header: React.FC = () => {
           <div className={styles["category-premium"]}>
             <img className={styles["icon"]} src={crown} alt="Coroa" />
             <li
+              role="button"
+              tabIndex={0}
               className={`${styles["category-item"]} ${
                 selectedCategory === "ASSINATURA" ? styles["selected"] : ""
               }`}

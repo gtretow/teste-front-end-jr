@@ -3,16 +3,21 @@ import "./Banner.scss";
 
 const Banner: React.FC = () => {
   return (
-    <div className="banner">
+    <section className="banner">
       <div className="banner-content">
         <div className="text-box">
           <h1>Venha conhecer nossas </h1>
           <h1>promoções</h1>
           <h2>50% Off nos produtos </h2>
-          <button className="banner-button"> ver produto </button>
+          <button
+            className="banner-button"
+            aria-label="Ver produtos em promoção"
+          >
+            Ver produto
+          </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

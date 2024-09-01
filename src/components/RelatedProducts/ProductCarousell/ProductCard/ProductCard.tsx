@@ -8,11 +8,14 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ productItem, onClick }) => (
-  <div className="product-card-box">
+  <article className="product-card-box">
     <div className="product-card">
-      <img src={productItem.photo} alt={productItem.productName} />
+      <figure className="product-image">
+        <img src={productItem.photo} alt={productItem.productName} />
+        <figcaption className="visually-hidden">{productItem.productName}</figcaption>
+      </figure>
       <h2>{productItem.productName}</h2>
-      <p className="old-price">
+      <p className="old-price" aria-label="Preço anterior">
         {productItem.price.toLocaleString("pt-BR", {
           style: "currency",
           currency: "BRL",
@@ -20,7 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ productItem, onClick }) => (
           maximumFractionDigits: 2,
         })}
       </p>
-      <p className="price">
+      <p className="price" aria-label="Preço atual com desconto">
         {(productItem.price - productItem.price * 0.1).toLocaleString("pt-BR", {
           style: "currency",
           currency: "BRL",
@@ -28,7 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ productItem, onClick }) => (
           maximumFractionDigits: 2,
         })}
       </p>
-      <p className="credit">
+      <p className="credit" aria-label="Opção de parcelamento">
         ou 2x de R$
         {(productItem.price - productItem.price / 2).toLocaleString("pt-BR", {
           style: "currency",
@@ -41,7 +44,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ productItem, onClick }) => (
       <span>Frete grátis</span>
       <button onClick={() => onClick(productItem)}>COMPRAR</button>
     </div>
-  </div>
+  </article>
 );
 
 export default ProductCard;
