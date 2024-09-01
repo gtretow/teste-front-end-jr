@@ -11,5 +11,13 @@
   img {
     width: 61px;
     height: 61px;
+    cursor: pointer;
+  }
+}
+
+.selected {
+  color: $primary-color;
+  p {
+    font-weight: 500;
   }
 }

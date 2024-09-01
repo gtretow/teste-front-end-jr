@@ -11,6 +11,7 @@ const RelatedProducts: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [productItem, setProductItem] = useState<Product>({} as Product);
+  const [selectedItem, setSelectedItem] = useState<string | null>(null);
 
   useEffect(() => {
     const getProducts = async () => {
@@ -33,30 +34,36 @@ const RelatedProducts: React.FC = () => {
     setOpenModal(false);
   };
 
+  const items = [
+    "CELULAR",
+    "ACESSÓRIOS",
+    "TABLETS",
+    "NOTEBOOKS",
+    "TVS",
+    "VER TODOS",
+  ];
+
+  const handleItemClick = (item: string) => {
+    setSelectedItem(item);
+  };
+
   return (
     <div className="related-products-box">
       <div>
         <h1>Produtos relacionados</h1>
       </div>
       <div className="related-products-selection">
-        <div className="related-products-item">
-          <p>CELULAR</p>
-        </div>
-        <div className="related-products-item">
-          <p>ACESSÓRIOS</p>
-        </div>
-        <div className="related-products-item">
-          <p>TABLETS</p>
-        </div>
-        <div className="related-products-item">
-          <p>NOTEBOOKS</p>
-        </div>
-        <div className="related-products-item">
-          <p>TVS</p>
-        </div>
-        <div className="related-products-item">
-          <p>VER TODOS</p>
-        </div>
+        {items.map((item) => (
+          <div
+            key={item}
+            className={`related-products-item ${
+              selectedItem === item ? "selected" : ""
+            }`}
+            onClick={() => handleItemClick(item)}
+          >
+            <p>{item}</p>
+          </div>
+        ))}
       </div>
 
       {openModal && (

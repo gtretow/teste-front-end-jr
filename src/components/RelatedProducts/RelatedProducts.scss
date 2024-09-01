@@ -32,6 +32,16 @@
   height: 40px;
   border: 1px solid #bdbdbd;
   gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.related-products-item:hover,
+.related-products-item.selected {
+  color: $primary-color;
+  p {
+    font-weight: 700;
+  }
 }
 
 .related-products-partners {
@@ -72,6 +82,7 @@
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
 
+  cursor: pointer;
   img {
     width: 172px;
     height: 62.66;

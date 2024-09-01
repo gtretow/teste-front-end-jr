@@ -1,18 +1,18 @@
 import React from "react";
 import "./CategorySelection.scss";
 import ItemComponent from "./ItemComponent/ItemComponent";
-import whiskey from "../../assets/whiskey.png";
-import runner from "../../assets/corrida.png";
-import healthy from "../../assets/healthy.png";
-import fashion from "../../assets/moda.png";
-import technology from "../../assets/tech.png";
-import market from "../../assets/supermercados.png";
-import tools from "../../assets/ferramentas.png";
+import whiskey from "../../assets/whiskey.svg";
+import runner from "../../assets/corrida.svg";
+import healthy from "../../assets/cuidados-de-saude.svg";
+import fashion from "../../assets/moda.svg";
+import technology from "../../assets/monitorar-tablet-e-smartohone.svg";
+import market from "../../assets/supermercados.svg";
+import tools from "../../assets/ferramentas.svg";
 
 const CategorySelection: React.FC = () => {
   return (
     <div className="category-selection-box">
-      <ItemComponent img={technology} title={"Tecnologia"} />
+      <ItemComponent selected img={technology} title={"Tecnologia"} />
       <ItemComponent img={market} title={"Supermercado"} />
       <ItemComponent img={whiskey} title={"Bebidas"} />
       <ItemComponent img={tools} title={"Ferramentas"} />

@@ -30,6 +30,7 @@
     width: 22.02px;
     height: 22px;
     padding: 3.21px 0px 3.21px 0px;
+    cursor: pointer;
   }
 }
 
@@ -90,12 +91,15 @@
     font-weight: 300;
     line-height: 19px;
     text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 }
 
 .input-box {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   input {
     width: 230px;
@@ -104,6 +108,10 @@
     border-radius: 4px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
+
+    &::placeholder {
+      transform: translateX(25px);
+    }
   }
 
   button {
@@ -113,9 +121,12 @@
     opacity: 0px;
     background-color: $primary-color;
     color: #fff;
+    margin-left: 9px;
 
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
+
+    cursor: pointer;
   }
 }
