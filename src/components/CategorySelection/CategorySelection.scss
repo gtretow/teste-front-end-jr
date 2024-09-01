@@ -1,0 +1,15 @@
+.category-selection-box {
+  display: flex;
+  height: 100%;
+  max-height: 174px;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-left: 86px;
+  padding-right: 86px;
+  margin-bottom: 38px;
+
+  img {
+    width: 61px;
+    height: 61px;
+  }
+}

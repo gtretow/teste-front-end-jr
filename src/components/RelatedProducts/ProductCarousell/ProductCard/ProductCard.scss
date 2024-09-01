@@ -1,0 +1,83 @@
+.product-card-box {
+  min-height: 500px;
+  min-width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.22);
+  align-items: center;
+  border-radius: 10px;
+
+  h2 {
+    color: $primary-color;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22.5px;
+    text-align: left;
+    color: rgba(63, 63, 64, 1);
+  }
+
+  p {
+    font-size: 1rem;
+    color: $secondary-color;
+  }
+
+  img {
+    min-height: 228px;
+    min-width: 247px;
+    margin-top: 22px;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 245px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  span {
+    color: $primary-color;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.old-price {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(128, 128, 128, 1);
+  text-decoration: line-through;
+  margin-top: 12px;
+}
+
+.credit {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $secondary-color;
+  width: 90%;
+  margin-bottom: 7px;
+}

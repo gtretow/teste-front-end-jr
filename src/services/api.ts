@@ -1,14 +1,11 @@
-import axios from "axios";
-import { Product } from "../types/Product";
-
-const API_URL = "URL_DO_JSON"; 
-
-export const fetchProducts = async (): Promise<Product[]> => {
+export const fetchProducts = async () => {
   try {
-    const response = await axios.get<Product[]>(API_URL);
-    return response.data;
+    const response = await fetch(
+      "/api/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"
+    );
+    const data = await response.json();
+    return data;
   } catch (error) {
     console.error("Erro ao buscar produtos:", error);
-    throw new Error("Erro ao buscar produtos");
   }
 };
