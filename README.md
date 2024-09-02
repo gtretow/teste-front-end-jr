@@ -19,11 +19,14 @@ Siga estes passos para configurar e executar o projeto localmente:
    git clone https://github.com/seu-usuario/seu-repositorio.git
    ```
 
-**Navegue para o Diretório do Projeto**
+2. **Navegue para o Diretório do Projeto**
 
-cd vite-project
+   ```bash
+   cd vite-project
 
-2. **Instale as Dependências**
+   ```
+
+3. **Instale as Dependências**
 
    ```bash
    npm install
@@ -32,7 +35,7 @@ cd vite-project
 
    ```
 
-3. **Executando o Projeto**
+4. **Executando o Projeto**
 
    ```bash
    npm run dev
