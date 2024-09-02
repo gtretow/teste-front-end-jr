@@ -1,13 +1,45 @@
 # Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
+Este é um projeto de front-end desenvolvido com Vite, React e TypeScript. O projeto tem como objetivo fornecer uma aplicação moderna e eficiente usando estas tecnologias.
 
+## Pré-requisitos
 
+Certifique-se de ter as seguintes ferramentas instaladas:
 
+- [Node.js](https://nodejs.org/) (versão 14.x ou superior)
+- [npm](https://www.npmjs.com/) ou [Yarn](https://classic.yarnpkg.com/) (gerenciadores de pacotes)
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+## Instalação
 
-https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1
+Siga estes passos para configurar e executar o projeto localmente:
+
+1. **Clone o Repositório**
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+
+**Navegue para o Diretório do Projeto**
+
+cd vite-project
+
+2. **Instale as Dependências**
+
+   ````bash
+   npm install
+   ```
+
+   ```bash
+   yarn install
+
+   ````
+
+3. **Executando o Projeto**
+
+   ````bash
+   npm run dev
+   ```
+
+   ```bash
+   yarn dev
+   ````
