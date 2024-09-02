@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductCard.scss";
 import { ProductCardProps } from "../../../types/ProductCardProps";
+import Button from "../../../components/Button/Button";
 
 const ProductCard: React.FC<ProductCardProps> = ({ productItem, onClick }) => (
   <article className="product-card-box">
@@ -39,7 +40,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ productItem, onClick }) => (
         sem juros
       </p>
       <span>Frete grátis</span>
-      <button onClick={() => onClick(productItem)}>COMPRAR</button>
+      <Button
+        className="large"
+        onClick={() => onClick(productItem)}
+        children="COMPRAR"
+        ariaLabel="Comprar"
+      />
     </div>
   </article>
 );

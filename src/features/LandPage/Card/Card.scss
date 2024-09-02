@@ -37,29 +37,6 @@
     url("../../../assets/shopsample.png");
 
   border-radius: 10px;
-  button {
-    &:hover {
-      background-color: darken($primary-color, 10%);
-    }
-  }
-}
-
-button {
-  color: #fff;
-  background-color: $primary-color;
-  width: 131px;
-  height: 48px;
-  gap: 0px;
-  border-radius: 10px;
-  opacity: 0px;
-
-  font-size: 16px;
-  font-weight: 900;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-  text-align: center;
-  border: none;
-  cursor: pointer;
 }
 
 .content-box {

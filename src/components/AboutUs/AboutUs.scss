@@ -139,26 +139,6 @@
       transform: translateX(25px);
     }
   }
-
-  button {
-    width: 62px;
-    height: 45px;
-    border-radius: 4px;
-    opacity: 0px;
-    background-color: $primary-color;
-    color: #fff;
-    margin-left: 9px;
-
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-
-    cursor: pointer;
-
-    &:hover {
-      background-color: darken($primary-color, 10%);
-    }
-  }
 }
 
 .visually-hidden {
@@ -197,36 +177,5 @@
   .newsletter-box {
     width: 100%;
     max-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-us-box {
-    min-height: auto;
-  }
-
-  .icons img {
-    width: 1rem;
-    height: 1rem;
-  }
-
-  .newsletter-text h1,
-  .newsletter-text h2 {
-    font-size: 1rem;
-  }
-
-  .newsletter-text p {
-    font-size: 0.75rem;
-  }
-
-  .input-box {
-    flex-direction: column;
-  }
-
-  .input-box input,
-  .input-box button {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 10px;
   }
 }

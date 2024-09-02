@@ -4,6 +4,7 @@ import "./AboutUs.scss";
 import facebookLogo from "../../assets/023-facebook.png";
 import instagramLogo from "../../assets/044-instagram.png";
 import youtubeLogo from "../../assets/116-youtube.png";
+import Button from "../Button/Button";
 
 const AboutUs: React.FC = () => {
   return (
@@ -83,7 +84,12 @@ const AboutUs: React.FC = () => {
                 placeholder="Seu E-mail"
                 required
               />
-              <button type="submit">OK</button>
+              <Button
+                children="OK"
+                className="small"
+                ariaLabel="OK"
+                onClick={() => {}}
+              />
             </div>
           </form>
         </div>

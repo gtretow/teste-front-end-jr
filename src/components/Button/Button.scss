@@ -1,0 +1,76 @@
+.banner {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 227px;
+  height: 60px;
+  background-color: $primary-color;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.large {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 245px;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.medium {
+  color: #fff;
+  background-color: $primary-color;
+  width: 131px;
+  height: 48px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.small {
+  width: 61px;
+  height: 45px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: $primary-color;
+  color: #fff;
+  margin-left: 9px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
