@@ -89,6 +89,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
+
+  svg {
+    fill: $primary-color;
+  }
 }
 
 .special-character {

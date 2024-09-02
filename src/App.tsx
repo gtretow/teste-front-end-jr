@@ -4,7 +4,6 @@ import "./styles/main.scss";
 import Banner from "./components/Banner/Banner";
 import CategorySelection from "./components/CategorySelection/CategorySelection";
 import RelatedProducts from "./components/RelatedProducts/RelatedProducts";
-import Modal from "./components/Modal/Modal";
 
 const App: React.FC = () => {
   return (

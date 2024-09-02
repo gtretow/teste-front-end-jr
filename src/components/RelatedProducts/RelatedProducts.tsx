@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import "./RelatedProducts.scss";
 import { Product } from "../../types/Product";
@@ -23,6 +24,7 @@ const RelatedProducts: React.FC = () => {
       }
     };
     getProducts();
+    setSelectedItem(items[0]);
   }, []);
 
   const onProductClick = (productItem: Product) => {
@@ -49,8 +51,10 @@ const RelatedProducts: React.FC = () => {
 
   return (
     <div className="related-products-box">
-      <div>
+      <div className="line-box">
+        <div className="section-end-line"></div>
         <h1>Produtos relacionados</h1>
+        <div className="section-end-line"></div>
       </div>
       <div className="related-products-selection">
         {items.map((item) => (
@@ -82,7 +86,11 @@ const RelatedProducts: React.FC = () => {
       </div>
 
       <div className=" related-products-lettering">
-        <h1>Produtos relacionados</h1>
+        <div className="line-box">
+          <div className="section-end-line" />
+          <h1>Produtos relacionados</h1>
+          <div className="section-end-line" />
+        </div>
         <h2>Ver todos</h2>
       </div>
       <div className="related-products-products">

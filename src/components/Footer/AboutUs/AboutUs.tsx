@@ -76,13 +76,15 @@ const AboutUs: React.FC = () => {
             <label htmlFor="newsletter-email" className="visually-hidden">
               Seu E-mail
             </label>
-            <input
-              id="newsletter-email"
-              type="email"
-              placeholder="Seu E-mail"
-              required
-            />
-            <button type="submit">OK</button>
+            <div>
+              <input
+                id="newsletter-email"
+                type="email"
+                placeholder="Seu E-mail"
+                required
+              />
+              <button type="submit">OK</button>
+            </div>
           </form>
         </div>
       </div>

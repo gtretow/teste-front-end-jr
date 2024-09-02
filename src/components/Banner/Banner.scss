@@ -1,4 +1,4 @@
-.banner {
+.promotion-banner {
   width: 100%;
   height: 100%;
   min-height: 395px;
@@ -10,52 +10,71 @@
   align-items: center;
   position: relative;
   margin-bottom: 34px;
+}
 
-  .banner-content {
-    width: 100%;
-    height: 100%;
-    min-height: 395px;
-    text-align: center;
+.promotion-banner-content {
+  width: 100%;
+  height: 100%;
+  min-height: 395px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.promotion-banner-text {
+  margin-left: 145px;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 72px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+    line-height: 54px;
+  }
+
+  button {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 227px;
+    height: 60px;
+    background-color: $primary-color;
     color: #fff;
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.4
-    ); /* Fundo semi-transparente para o texto */
-    padding: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+    border: none;
 
-    .text-box {
-      margin-left: 145px;
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+    &:hover {
+      background-color: darken($primary-color, 10%);
     }
+  }
+}
 
-    h1 {
-      font-size: 48px;
-      font-weight: 600;
-      line-height: 72px;
-    }
+@media (max-width: 768px) {
+  .promotion-banne-text {
+    max-width: 90%;
+  }
 
-    h2 {
-      font-size: 36px;
-      font-weight: 600;
-      margin-bottom: 35px;
-      line-height: 54px;
-    }
+  .promotion-banner h1 {
+    font-size: 2rem;
+  }
 
-    button {
-      margin-bottom: 20px;
-      border-radius: 5px;
-      width: 227px;
-      height: 60px;
-      background-color: $primary-color;
-      color: #fff;
-      font-size: 18px;
-      line-height: 27px;
-      cursor: pointer;
-    }
+  .promotion-banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .promotion-banner-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 }

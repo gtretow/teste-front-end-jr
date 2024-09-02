@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from "react";
 import "./Header.scss";
 import logo from "../../assets/grouplogo.png";
 import heart from "../../assets/heart.svg";
 import box from "../../assets/Group.svg";
 import userCircle from "../../assets/userCircle.svg";
 import shoppingCart from "../../assets/shoppingCart.svg";
-import crown from "../../assets/CrownSimple.svg";
 import magnifyingGlass from "../../assets/magnifyingGlass.png";
 import creaditCard from "../../assets/CreditCard.png";
 import shieldCheck from "../../assets/ShieldCheck.png";
 import creditCard from "../../assets/CreditCard.png";
 import styles from "./Header.module.scss";
+import Crown from "../Icons/crown";
 
 const Header: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -27,6 +28,10 @@ const Header: React.FC = () => {
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
   };
+
+  useEffect(() => {
+    setSelectedCategory(categories[0]);
+  }, []);
 
   return (
     <header className="header">
@@ -81,7 +86,10 @@ const Header: React.FC = () => {
             </li>
           ))}
           <div className={styles["category-premium"]}>
-            <img className={styles["icon"]} src={crown} alt="Coroa" />
+            {/* <img className={styles["icon"]} src={crown} alt="Coroa" /> */}
+            <div className={styles["icon"]}>
+              <Crown color={selectedCategory === "ASSINATURA" ? true : false} />
+            </div>
             <li
               role="button"
               tabIndex={0}

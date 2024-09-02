@@ -2,16 +2,16 @@ import React from "react";
 import "./ItemComponent.scss";
 
 interface Card {
-  img: string;
   title: string;
   selected?: boolean;
+  SvgComponent: React.FC;
 }
 
-const ItemComponent: React.FC<Card> = ({ img, title, selected }) => {
+const ItemComponent: React.FC<Card> = ({ title, selected, SvgComponent }) => {
   return (
     <div className="item-component-box">
       <div className="card">
-        <img src={img} />
+        <SvgComponent />
       </div>
       <p className={selected ? "selected" : ""}>{title}</p>
     </div>

@@ -38,14 +38,31 @@
   display: flex;
   align-items: center;
   height: 100%;
-  width: 70%;
-  justify-content: space-around;
+  width: 60%;
+  margin-left: 96px;
   margin-top: 59px;
+  gap: 93px;
 }
 
 .text-box {
   min-width: 149px;
   min-height: 224px;
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19.5px;
+  }
+
+  ul {
+    margin-top: 24px;
+  }
+
+  a {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 32px;
+  }
 }
 
 .payment {
@@ -86,10 +103,18 @@
     text-align: left;
   }
 
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: left;
+  }
+
   p {
     font-size: 12px;
     font-weight: 300;
     line-height: 19px;
+    width: 80%;
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -101,6 +126,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+
   input {
     width: 230px;
     height: 45px;
@@ -128,6 +154,10 @@
     line-height: 20px;
 
     cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
   }
 }
 
@@ -140,4 +170,63 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+@media (max-width: 1200px) {
+  .about-us-container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-box {
+    padding: 10px;
+  }
+
+  .about-us-container {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .text-box {
+    min-width: 100px;
+  }
+
+  .payment,
+  .newsletter-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-box {
+    min-height: auto;
+  }
+
+  .icons img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .newsletter-text h1,
+  .newsletter-text h2 {
+    font-size: 1rem;
+  }
+
+  .newsletter-text p {
+    font-size: 0.75rem;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+  .input-box input,
+  .input-box button {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
 }

@@ -14,6 +14,12 @@
       #000000 85.04%
     ),
     url("../../../assets/shopsample.png");
+
+  button {
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
 }
 
 .card-box2 {
@@ -31,6 +37,11 @@
     url("../../../assets/shopsample.png");
 
   border-radius: 10px;
+  button {
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
 }
 
 button {

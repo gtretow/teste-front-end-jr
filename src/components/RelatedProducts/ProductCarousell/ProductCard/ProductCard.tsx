@@ -12,7 +12,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ productItem, onClick }) => (
     <div className="product-card">
       <figure className="product-image">
         <img src={productItem.photo} alt={productItem.productName} />
-        <figcaption className="visually-hidden">{productItem.productName}</figcaption>
+        <figcaption className="visually-hidden">
+          {productItem.productName}
+        </figcaption>
       </figure>
       <h2>{productItem.productName}</h2>
       <p className="old-price" aria-label="Preço anterior">
