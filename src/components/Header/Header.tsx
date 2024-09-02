@@ -15,6 +15,7 @@ import Crown from "../Icons/crown";
 
 const Header: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [searchValue, setSearchValue] = useState("");
 
   const categories = [
     "TODAS CATEGORIAS",
@@ -29,6 +30,10 @@ const Header: React.FC = () => {
     setSelectedCategory(category);
   };
 
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(event.target.value);
+  };
+
   useEffect(() => {
     setSelectedCategory(categories[0]);
   }, []);
@@ -39,16 +44,16 @@ const Header: React.FC = () => {
         <div className="header-top">
           <span>
             <img src={shieldCheck} />
-            Compra <span className="special-character"> 100% segura</span>
+            Compra <p className="special-character"> &nbsp; 100% segura </p>
           </span>
           <span>
             <img src={creditCard} />
-            <span className="special-character">Frete grátis</span>
+            <p className="special-character">Frete grátis &nbsp;</p>
             acima de R$ 200
           </span>
           <span>
             <img src={creaditCard} />
-            <span className="special-character">parcele</span> suas compras
+            <p className="special-character">parcele &nbsp;</p> suas compras
           </span>
         </div>
       </div>
@@ -59,6 +64,8 @@ const Header: React.FC = () => {
             type="text"
             className="header-search"
             placeholder="O que você está buscando?"
+            value={searchValue}
+            onChange={handleInputChange}
           />
           <img src={magnifyingGlass} alt="Buscar" role="button" tabIndex={0} />
         </div>

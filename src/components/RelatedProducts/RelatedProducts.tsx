@@ -93,7 +93,7 @@ const RelatedProducts: React.FC = () => {
         </div>
         <h2>Ver todos</h2>
       </div>
-      <div className="related-products-products">
+      <div className="related-products-other-products">
         <Card variant={"secondary"} />
         <Card variant={"secondary"} />
       </div>
