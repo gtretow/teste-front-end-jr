@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assets/econverselogo.png";
 
 import "./Footer.scss";
-import AboutUs from "./AboutUs/AboutUs";
+import AboutUs from "../AboutUs/AboutUs";
 
 const Footer: React.FC = () => {
   return (

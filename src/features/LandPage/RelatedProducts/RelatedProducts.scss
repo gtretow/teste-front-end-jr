@@ -18,7 +18,7 @@
 .related-products-selection {
   display: flex;
   margin-bottom: 20px;
-  width: 100%;
+  width: 80%;
   justify-content: space-evenly;
   font-weight: 400;
   font-size: 16px;
@@ -48,19 +48,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
   margin-bottom: 20px;
-  max-width: 1700px;
+  max-width: 1500px;
 }
 
 .related-products-other-products {
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  max-width: 1700px;
+  max-width: 1500px;
 }
 
 .related-products-by-brand {
@@ -95,8 +95,9 @@
 
 .item-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: 80px;
+  width: 100%;
 }
 
 .related-products-lettering {
@@ -133,7 +134,7 @@
 
 .line-box {
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: space-evenly;
   align-items: center;
   gap: 34px;

@@ -53,7 +53,7 @@ const Header: React.FC = () => {
           </span>
           <span>
             <img src={creaditCard} />
-            <p className="special-character">parcele &nbsp;</p> suas compras
+            <p className="special-character">Parcele &nbsp;</p> suas compras
           </span>
         </div>
       </div>
@@ -93,7 +93,6 @@ const Header: React.FC = () => {
             </li>
           ))}
           <div className={styles["category-premium"]}>
-            {/* <img className={styles["icon"]} src={crown} alt="Coroa" /> */}
             <div className={styles["icon"]}>
               <Crown color={selectedCategory === "ASSINATURA" ? true : false} />
             </div>

@@ -1,9 +1,9 @@
 import React from "react";
-import paymentMethod from "../../../assets/formas_pagamento.png";
+import paymentMethod from "../../assets/formas_pagamento.png";
 import "./AboutUs.scss";
-import facebookLogo from "../../../assets/023-facebook.png";
-import instagramLogo from "../../../assets/044-instagram.png";
-import youtubeLogo from "../../../assets/116-youtube.png";
+import facebookLogo from "../../assets/023-facebook.png";
+import instagramLogo from "../../assets/044-instagram.png";
+import youtubeLogo from "../../assets/116-youtube.png";
 
 const AboutUs: React.FC = () => {
   return (

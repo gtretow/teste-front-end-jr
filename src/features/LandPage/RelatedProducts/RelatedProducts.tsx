@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import "./RelatedProducts.scss";
-import { Product } from "../../types/Product";
-import { fetchProducts } from "../../services/api";
-import ProductCarousell from "./ProductCarousell/ProductCarousell";
-import Card from "./Card/Card";
-import logo from "../../assets/grouplogo.png";
-import Modal from "../Modal/Modal";
+import { Product } from "../../../types/Product";
+import { fetchProducts } from "../../../services/api";
+import Card from "../Card/Card";
+import logo from "../../../assets/grouplogo.png";
+import Modal from "../../../components/Modal/Modal";
+import ProductCarousell from "../ProductCarousell/ProductCarousell";
 
 const RelatedProducts: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);

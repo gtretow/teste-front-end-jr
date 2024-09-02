@@ -1,11 +1,6 @@
 import React from "react";
-import { Product } from "../../../../types/Product";
 import "./ProductCard.scss";
-
-interface ProductCardProps {
-  productItem: Product;
-  onClick: (product: Product) => void;
-}
+import { ProductCardProps } from "../../../types/ProductCardProps";
 
 const ProductCard: React.FC<ProductCardProps> = ({ productItem, onClick }) => (
   <article className="product-card-box">

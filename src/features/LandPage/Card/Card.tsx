@@ -1,11 +1,9 @@
 import React from "react";
 import "./Card.scss";
+import { ProductCardColorProps } from "../../../types/ProductCardColorProps";
 
-interface ProductCardProps {
-  variant?: "primary" | "secondary" | "highlight"; // Definindo as variantes possíveis como props
-}
 
-const Card: React.FC<ProductCardProps> = ({ variant }) => {
+const Card: React.FC<ProductCardColorProps> = ({ variant }) => {
   return (
     <>
       {variant == "primary" && (

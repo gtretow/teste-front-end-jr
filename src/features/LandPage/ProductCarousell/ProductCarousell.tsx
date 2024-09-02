@@ -1,12 +1,7 @@
 import React from "react";
-import { Product } from "../../../types/Product";
-import ProductCard from "../ProductCarousell/ProductCard/ProductCard";
 import "./ProductCarousell.scss";
-
-interface ProductListProps {
-  products: Product[];
-  onProductClick: (product: Product) => void;
-}
+import ProductCard from "../ProductCard/ProductCard";
+import { ProductListProps } from "../../../types/ProductListProps";
 
 const ProductCarousell: React.FC<ProductListProps> = ({
   products,

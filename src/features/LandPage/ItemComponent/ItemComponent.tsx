@@ -1,13 +1,12 @@
 import React from "react";
 import "./ItemComponent.scss";
+import { CardProps } from "../../../types/CardProps";
 
-interface Card {
-  title: string;
-  selected?: boolean;
-  SvgComponent: React.FC;
-}
-
-const ItemComponent: React.FC<Card> = ({ title, selected, SvgComponent }) => {
+const ItemComponent: React.FC<CardProps> = ({
+  title,
+  selected,
+  SvgComponent,
+}) => {
   return (
     <div className="item-component-box">
       <div className="card">

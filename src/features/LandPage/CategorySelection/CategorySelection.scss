@@ -1,9 +1,10 @@
 .category-selection-box {
   display: flex;
+  justify-content: center;
   height: 100%;
   max-height: 174px;
   width: 100%;
-  justify-content: space-evenly;
+  gap: 60px;
   padding-left: 86px;
   padding-right: 86px;
   margin-bottom: 38px;

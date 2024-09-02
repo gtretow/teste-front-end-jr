@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import { Product } from "../../types/Product";
 import "./Modal.scss";
-
-interface ModalProps {
-  isOpen: boolean;
-  product: Product;
-  onClose: () => void;
-}
+import { ModalProps } from "../../types/ModalProps";
 
 const Modal: React.FC<ModalProps> = ({ product, onClose }) => {
   const [quantity, setQuantity] = useState<number>(1);
