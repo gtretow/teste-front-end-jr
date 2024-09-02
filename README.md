@@ -25,21 +25,17 @@ cd vite-project
 
 2. **Instale as Dependências**
 
-   ````bash
-   npm install
-   ```
-
    ```bash
+   npm install
+
    yarn install
 
-   ````
+   ```
 
 3. **Executando o Projeto**
 
-   ````bash
-   npm run dev
-   ```
-
    ```bash
+   npm run dev
+
    yarn dev
-   ````
+   ```
